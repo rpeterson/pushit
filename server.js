@@ -12,7 +12,8 @@ Socket.bindSync('tcp://*:' + config.zmq);
 Gith({
   repo: '.*'
 }).on( 'all', function( payload ) {
-  Socket.send(MsgPack.pack(payload));
+	console.log(payload);
+  	Socket.send(MsgPack.pack(payload));
 });
 
 // Web App
