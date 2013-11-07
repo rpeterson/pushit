@@ -15,7 +15,8 @@
     "gith": "~1.0.4",
     "config": "~0.4.32",
     "msgpack": "~0.2.1",
-    "yaml": "~0.2.3"
+    "yaml": "~0.2.3",
+    "express": "~3.4.4"
   },
   "devDependencies": {},
   "scripts": {
