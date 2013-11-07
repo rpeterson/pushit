@@ -25,4 +25,4 @@ App.listen(config.port);
 
 console.log('ZeroMQ '  + config.zmq);
 console.log('Githook ' + config.web);
-console.log('Web APp ' + config.port);
+console.log('Web App ' + config.port);
