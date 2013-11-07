@@ -17,7 +17,7 @@ Gith({
 });
 
 // Web App
-App.get('/', function(req, res){
+App.all('/', function(req, res){
   res.send('Push It. Push It Real Good.');
 });
 
