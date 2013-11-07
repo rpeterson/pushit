@@ -26,7 +26,7 @@ var play = function (){
 	});
 }
 
-sock.on('message', function (msgpack_payload) {
+Socket.on('message', function (msgpack_payload) {
 	var payload = MsgPack.unpack(msgpack_payload);
 	console.log(payload);
   	// play();
@@ -39,7 +39,7 @@ sock.on('message', function (msgpack_payload) {
 var svc = new Service({
   name:'GitPushIt',
   description: 'Push It Real Good Git Style.',
-  script: __dirname + 'run.js'
+  script: __dirname + 'client.js'
 });
 
 // Listen for the "install" event, which indicates the
