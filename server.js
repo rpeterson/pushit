@@ -9,9 +9,6 @@ var App = Express();
 
 Socket.bindSync('tcp://*:' + config.zmq);
 
-console.log('ZeroMQ ' + config.zmq);
-console.log('Githook ' + config.web);
-
 Gith({
   repo: '.*'
 }).on( 'all', function( payload ) {
@@ -24,3 +21,7 @@ App.get('/', function(req, res){
 });
 
 App.listen(config.port);
+
+console.log('ZeroMQ '  + config.zmq);
+console.log('Githook ' + config.web);
+console.log('Web APp ' + config.port);
