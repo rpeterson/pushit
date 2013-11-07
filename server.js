@@ -1,6 +1,6 @@
 var config = require('config').Server
 var ZMQ = require('zmq');
-var Socket = zmq.socket('push');
+var Socket = ZMQ.socket('push');
 var Gith = require('gith').create( config.ports.web );
 var MsgPack = require('msgpack');
 

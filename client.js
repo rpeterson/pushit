@@ -3,7 +3,7 @@ var Program = require('commander');
 var Service = require('node-mac').Service;
 var spotify = require('spotify-node-applescript');
 var ZMQ = require('zmq');
-var Socket = zmq.socket('pull');
+var Socket = ZMQ.socket('pull');
 var MsgPack = require('msgpack');
 
 /**
