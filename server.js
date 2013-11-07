@@ -1,14 +1,12 @@
 var config = require('config').Server;
 
-console.log(config);
-
 var ZMQ = require('zmq');
 var Socket = ZMQ.socket('push');
-var Gith = require('gith').create( config.ports.web );
+var Gith = require('gith').create( config.web );
 var MsgPack = require('msgpack');
 
-Socket.bindSync('tcp://*:' + config.ports.zmq);
-console.log('Producer bound to port ' + config.ports.zmq);
+Socket.bindSync('tcp://*:' + config.zmq);
+console.log('Producer bound to port ' + config.zmq);
 
 Gith({
   repo: '(.*)'

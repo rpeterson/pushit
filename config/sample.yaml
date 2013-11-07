@@ -1,6 +1,0 @@
-Server:
-	ports:
-		web: 8042
-		zmq: 4242
-Client:
-	server: 'http://www.example.com/'
