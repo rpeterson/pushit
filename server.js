@@ -6,7 +6,9 @@ var Gith = require('gith').create( config.web );
 var MsgPack = require('msgpack');
 
 Socket.bindSync('tcp://*:' + config.zmq);
-console.log('Producer bound to port ' + config.zmq);
+
+console.log('ZeroMQ ' + config.zmq);
+console.log('Githook ' + config.web);
 
 Gith({
   repo: '(.*)'

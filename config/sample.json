@@ -1,0 +1,9 @@
+{
+	"Server": {
+		"web": 8042,
+		"zmq": 4242
+	},
+	"Client": {
+		"server": "tec://example.com:8888"
+	}
+}
