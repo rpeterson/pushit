@@ -1,4 +1,4 @@
-var config = require('config').Client
+var config = require('config').Client;
 var Program = require('commander');
 var Service = require('node-mac').Service;
 var spotify = require('spotify-node-applescript');
