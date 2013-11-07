@@ -1,0 +1,25 @@
+{
+  "name": "pushit",
+  "version": "0.0.1",
+  "description": "GIT Push It Client",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rpeterson/pushit.git"
+  },
+  "main": "run.js",
+  "dependencies": {
+    "node-mac": "~0.1.3",
+    "spotify-node-applescript": "~0.2.1",
+    "commander": "~2.0.0",
+    "zmq": "~2.5.1",
+    "gith": "~1.0.4",
+    "config": "~0.4.32",
+    "msgpack": "~0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan J. Peterson",
+  "license": "MIT"
+}
