@@ -18,6 +18,7 @@ Gith({
 
 // Web App
 App.all('/', function(req, res){
+  console.log(req);
   res.send('Push It. Push It Real Good.');
 });
 
